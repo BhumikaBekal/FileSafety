@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FILE ENCRYPTION</title>
+<style>
+body{
+    background: #fa7b8a;
+
+}
+
+.container{
+          
+          max-width: 700px;
+          margin: auto;
+          text-align: center;
+          
+}
+
+.formm {
+  padding: 4rem 4rem;
+  background-color: rgb(241, 234, 234);
+  border-radius: 1rem;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+}
+.heading
+{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    text-align: center;
+    
+}
+
+
+.upload
+{
+    color: white;
+    background: #206a5d;
+    padding: 6px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0px 1px 1px #6b4559;
+    outline: none;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    width: 70px;
+    margin-left: -50px;
+    bottom:10px;
+    
+}
+.upload:hover{
+    background: #438a5e;
+}
+
+.or {
+  position: fixed;
+  top: 40%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  color:#206a5d;
+  font-weight: bolder;
+}
+
+.child{
+    position: fixed;
+  top: 45%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background-color:#206a5d;
+  box-shadow: 1px 0px 1px 1px #6b4559;
+  font-size: 15px;
+  padding:6px;
+  border-radius: 1rem;
+
+}
+.child:hover{
+    background: #438a5e;
+}
+
+
+a{
+  color: white;
+}
+a:hover {
+  color: #eaf1ed;
+  }
+
+
+
+</style>
+
+</head>
+<body>
+<h1 class="heading">ENCRYPT A FILE</h1>
+
+
+<div class="container">
+<form action="FileUploadServlet" class="formm" method="post" enctype="multipart/form-data">
+<div>Select a Data File to Upload:<input type="file"  name="fileName" ></div>
+
+<div>Select a Key File :<input type="file" name="keyfileName"></div>
+
+<input type="submit"  class="upload"value="Upload" >
+</form>
+</div>
+
+
+<div class="or">OR</div>
+
+
+    <div class="child"><a href="index2.html">DECRYPT A FILE</a></div>
+
+
+</body>
+</html>

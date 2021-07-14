@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FILE DECRYPTION</title>
+<style>
+body{
+    background: #fa7b8a;
+
+}
+
+.heading2
+{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    text-align: center;
+    
+}
+.container2{
+          
+          max-width: 700px;
+          margin: auto;
+          text-align: center;
+          
+}
+
+.form2{
+  padding: 4rem 4rem;
+  background-color: rgb(241, 234, 234);
+  border-radius: 1rem;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+}
+
+.upload2
+{
+    color: white;
+    background: #206a5d;
+    padding: 6px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0px 1px 1px #6b4559;
+    outline: none;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    width: 70px;
+    margin-left: -50px;
+    bottom:10px;
+    
+}
+.upload2:hover{
+    background: #438a5e;
+}
+
+
+</style>
+</head>
+<body>
+<h1 class="heading2">DECRYPT A FILE</h1>
+
+<div class="container2">
+<form action="FileDownloadServlet" method="post" class="form2" enctype="multipart/form-data">
+Enter the file name :<input type="text" name="fileToDecrypt" >
+<br>
+Select a Key File :<input type="file" name="keyfile">
+<br>
+<input type="submit" value="Decrypt" class="upload2">
+</form>
+</div>
+
+</body>
+</html>
